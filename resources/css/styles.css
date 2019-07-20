@@ -1,7 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Hammersmith+One|Josefin+Sans|Montserrat+Alternates|Philosopher&display=swap');
+
+/* Universal Styles */
+html {
+  font-size: 16px;
+}
+body {
+  background-color: #bbad8f;
+  font-family: "Montserrat Alternates", Arial, sans-serif;
+  font-size: 1rem;
+
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
+/*Header styles*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 2rem;
+  padding: 0 1.5rem;
+  background-color: #34415e;
+  height: 4rem;
+  position: fixed;
+}
+/* Nav Styles */
 /* Universal Styles */
 /* Universal Styles */
 /* Universal Styles */
 /* Universal Styles */
-/* Universal Styles */
-/* Universal Styles */
-color:
