@@ -39,10 +39,16 @@ header {
   position: fixed;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 header img {
   height: 2rem;
-  width: 100%;
-  margin-top: 1rem;
+  width: auto;
+  
 }
 /* Nav Styles */
 nav ul li {
@@ -58,7 +64,7 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #ffffff;
-  transition: color 0.25s ease-in-out;
+  transition: color 0.5s ease-in-out;
 }
 /* Universal Styles */
 /* Universal Styles */
