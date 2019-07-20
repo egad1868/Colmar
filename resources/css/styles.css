@@ -8,6 +8,7 @@ body {
   background-color: #bbad8f;
   font-family: "Montserrat Alternates", Arial, sans-serif;
   font-size: 1rem;
+  color: #34415e;
 
 }
 a {
@@ -43,12 +44,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 2rem;
+  color: #bbad8f;
+  font-weight: 900;
 }
 
-header img {
+.logo img {
   height: 2rem;
   width: auto;
-  
+  padding-right: 1.5rem;
 }
 /* Nav Styles */
 nav ul li {
@@ -66,7 +71,25 @@ nav ul li a:hover {
   color: #ffffff;
   transition: color 0.5s ease-in-out;
 }
-/* Universal Styles */
+/* Banner Styles */
+#banner {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch ;
+  justify-content: center;
+
+}
+#banner img {
+  padding: 2rem 1.5rem;
+  width: 60%;
+  height: auto;
+}
+
+.btn {
+  background-color: #16405b;
+  border-radius: 3px 0 0 0;
+  padding: 0.5rem 0;
+  }
 /* Universal Styles */
 /* Universal Styles */
 /* Universal Styles */
