@@ -35,9 +35,28 @@ header {
   padding: 0 1.5rem;
   background-color: #34415e;
   height: 4rem;
+  width: 100%;
   position: fixed;
 }
+
+header img {
+  height: 2rem;
+  width: 100%;
+}
 /* Nav Styles */
+nav ul li {
+  display:inline;
+  margin-left: 1rem;
+}
+
+nav ul li a {
+  color: #0000e0;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+  transition: color 0.25 ease-in-out;
+}
 /* Universal Styles */
 /* Universal Styles */
 /* Universal Styles */
