@@ -34,6 +34,7 @@ h1, h2, h3, h4, {
 
 h1 {
   font-size: 3rem;
+  font-weight: 900;
 }
 
 h2 {
@@ -67,7 +68,7 @@ header {
   color: #bbad8f;
 }
 .logo span {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #bdbab3;
 }
 .logo img {
@@ -139,14 +140,15 @@ main {
   display: flex;
   justify-content: flex-start;
   background-color: #bdbab3;
-  padding: 0 1.5rem;
+  padding-left: 1.5rem;
 }
 .practiceL {
-  display: flex;
+/*  display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: flex-start;*/
   padding-right: 1.5rem;
+  width: 60%;
 }
 .practiceL img {
   padding: 2rem 0;
@@ -154,18 +156,18 @@ main {
   height: auto;
 }
 .practiceR {
-  display: flex;
+  /*display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: center;*/
   border-left: 0.05rem ridge #34415e;
   width: 40%;
 }
-.practiceCard {
+/*.practiceCard {
   display: flex;
   align-items: center;
   border-bottom: 0.05rem ridge #34415e;
-}
+}*/
 .practiceCard img {
   padding: 1rem;
   width: 35%;
@@ -181,12 +183,8 @@ main {
   margin-bottom: 0.5rem;
 }
 
-.practiceCard p {
-  font-size: 0.75rem;
-}
-
 .practiceCard a {
-  font-size: 0.5rem;
+  font-size: 0.75rem;
   margin-top: 0.5rem;
 
 }
@@ -198,16 +196,22 @@ main {
 #courses {
   padding: 2rem 4.6rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.group {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  padding-left: 1.5rem;
 }
 .course {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 0 2rem 2rem 0;
-  padding: 0 0 1.5rem 1rem;
+  padding-bottom: 1.5rem;
   background-color: #ffffff;
 }
 .course img {
