@@ -83,17 +83,17 @@ header {
   padding-right: 1.5rem;
 }
 /* Nav Styles */
-nav ul li {
+ul li {
   display:inline;
   margin-left: 1rem;
 }
 
-nav ul li a {
+ul li a {
   color: #bbad8f;
   font-weight: bold;
 }
 
-nav ul li a:hover {
+ul li a:hover {
   color: #ffffff;
   transition: color 0.5s ease-in-out;
 }
@@ -112,6 +112,7 @@ nav ul li a:hover {
 }
 
 #banner .text {
+  position: absolute;
   display: flex;
   flex-direction: column;
   margin-right: 1.5rem;
@@ -182,12 +183,16 @@ main {
   align-items: center;
   border-bottom: 0.05rem ridge #34415e;
 }
+.card:hover {
+  background-color: #bbad8f;
+  transition: background-color 1s linear;
+}
 .card img {
   padding: 1rem;
   width: 35%;
   height: auto;
 }
-.card > .text {
+.card .text {
   display: flex;
   flex-direction: column;
   width: 65%;
@@ -202,10 +207,7 @@ main {
   margin-top: 0.5rem;
 
 }
-.card:hover {
-  background-color: #bbad8f;
-  transition: background-color 1s linear;
-}
+
 /* Learn Styles */
 #courses {
   padding: 2rem 4.6rem;
@@ -239,6 +241,7 @@ main {
   visibility: hidden;
 }
 .course .text:hover {
+  visibility: visible;
   transition: top 2s linear;
 }
 /* Thesis Styles */
