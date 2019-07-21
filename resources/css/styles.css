@@ -72,6 +72,12 @@ nav ul li a:hover {
   transition: color 0.5s ease-in-out;
 }
 /* Banner Styles */
+#banner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 #banner .text {
   display: flex;
   flex-direction: column;
@@ -88,9 +94,63 @@ nav ul li a:hover {
 
 .btn {
   background-color: #16405b;
-  border-radius: 3px 0 0 0;
+  border-radius: 10px 0 0 0;
   padding: 0.5rem 0;
   }
-/* Universal Styles */
-/* Universal Styles */
-/* Universal Styles */
+/* Main Styles */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+/* Practice Styles */
+#practice {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #bdbab3;
+}
+.practiceL {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.practiceL img {
+  padding: 2rem 1.5rem;
+  width: 60%;
+  height: auto;
+}
+.practiceR {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 0.25rem ridge #34415e;
+  width: 40%;
+}
+.practiceCard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.practiceCard img {
+  padding: 1rem;
+  width: 35%;
+  height: auto;
+}
+.practiceCard > .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.25rem ridge #34415e;
+  width: 65%;
+}
+
+
+
+/* Learn Styles */
+/* Thesis Styles */
+/* Footer Styles */
