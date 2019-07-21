@@ -72,7 +72,7 @@ nav ul li a:hover {
   transition: color 0.5s ease-in-out;
 }
 /* Banner Styles */
-#banner {
+#banner .text {
   display: flex;
   flex-direction: column;
   align-items: stretch ;
@@ -81,6 +81,7 @@ nav ul li a:hover {
 }
 #banner img {
   padding: 2rem 1.5rem;
+  margin-top: 4rem;
   width: 60%;
   height: auto;
 }
