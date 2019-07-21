@@ -155,7 +155,7 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;*/
-  padding-right: 1.5rem;
+  padding-right: 0 1.5rem 2rem 0;
   width: 60%;
 }
 .practiceL img {
@@ -239,14 +239,14 @@ main {
 .course .text {
   padding-left: 1.5rem;
 }
-.course ul {
+.course ul li {
   display: block;
-  visibility: hidden;
+  opacity: 0.0;
 }
-.course ul:hover {
-  visibility: visible;
+.course ul li:hover {
   display: block;
-  transition: top 2s linear;
+  opacity: 1.0;
+  transition: opacity 2s linear;
 }
 /* Thesis Styles */
 #thesis {
