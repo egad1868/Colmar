@@ -239,10 +239,12 @@ main {
 .course .text {
   padding-left: 1.5rem;
 }
-.course ul li {
-  display: none;
+.course ul {
+  display: block;
+  visibility: hidden;
 }
-.course ul li:hover {
+.course ul:hover {
+  visibility: visible;
   display: block;
   transition: top 2s linear;
 }
