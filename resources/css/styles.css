@@ -199,7 +199,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
-#course h2 {
+#courses h2 {
   margin-bottom: 2rem;
 }
 .group {
@@ -235,7 +235,9 @@ main {
 #thesis h2 {
   margin-bottom: 2rem;
 }
-
+.thesis {
+  display: flex;
+}
 .thesisL {
   width: 60%;
   display: flex;
