@@ -63,10 +63,13 @@ header {
   align-items: center;
   justify-content: flex-start;
   font-family: "Hammersmith One", sans-serif;
+  text-transform: uppercase;
   color: #bbad8f;
-  font-weight: 900;
 }
-
+.logo span {
+  font-size: 2rem;
+  color: #bdbab3;
+}
 .logo img {
   height: 2rem;
   width: auto;
@@ -80,7 +83,6 @@ nav ul li {
 
 nav ul li a {
   color: #bbad8f;
-  font-size: 1.25rem;
   font-weight: bold;
 }
 
@@ -95,19 +97,21 @@ nav ul li a:hover {
   justify-content: flex-start;
   margin: 0 auto;
 }
-
-#banner .text {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch ;
-  justify-content: flex-start;
-
-}
 #banner img {
   padding: 2rem 1.5rem;
   margin-top: 4rem;
   width: 60%;
   height: auto;
+}
+
+#banner .text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.5rem;
+}
+
+#banner h2 {
+  margin-bottom: 1rem;
 }
 
 .btn {
@@ -117,6 +121,7 @@ nav ul li a:hover {
   padding: 0.5rem 0;
   color: #bbad8f;
   font-size: 1.5rem;
+  margin-top: 1rem;
   }
 .btn:hover {
   background-color: #bbad8f;
@@ -128,26 +133,24 @@ nav ul li a:hover {
 main {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
 }
 /* Practice Styles */
 #practice {
   display: flex;
-  align-items: center;
   justify-content: flex-start;
   background-color: #bdbab3;
-  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 .practiceL {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-right: 1.5rem;
 }
 .practiceL img {
-  padding: 2rem 1.5rem;
-  width: 60%;
+  padding: 2rem 0;
+  width: 100%;
   height: auto;
 }
 .practiceR {
@@ -155,13 +158,13 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border-left: 0.25rem ridge #34415e;
+  border-left: 0.05rem ridge #34415e;
   width: 40%;
 }
 .practiceCard {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  border-bottom: 0.05rem ridge #34415e;
 }
 .practiceCard img {
   padding: 1rem;
@@ -171,14 +174,46 @@ main {
 .practiceCard > .text {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  border-bottom: 0.25rem ridge #34415e;
   width: 65%;
 }
 
+.practiceCard h3 {
+  margin-bottom: 0.5rem;
+}
 
+.practiceCard p {
+  font-size: 0.75rem;
+}
 
+.practiceCard a {
+  font-size: 0.5rem;
+  margin-top: 0.5rem;
+
+}
+.practiceCard:hover {
+  background-color:#bdbab3;
+  transition: background-color 0.5s ease-in-out;
+}
 /* Learn Styles */
+#courses {
+  padding: 2rem 4.6rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.course {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 2rem 2rem 0;
+  padding: 0 0 1.5rem 1rem;
+  background-color: #ffffff;
+}
+.course img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
 /* Thesis Styles */
 /* Footer Styles */
