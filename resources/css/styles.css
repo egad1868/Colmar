@@ -156,18 +156,18 @@ main {
   height: auto;
 }
 .practiceR {
-  /*display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;*/
+  align-items: center;
   border-left: 0.05rem ridge #34415e;
   width: 40%;
 }
-/*.practiceCard {
+.practiceCard {
   display: flex;
   align-items: center;
   border-bottom: 0.05rem ridge #34415e;
-}*/
+}
 .practiceCard img {
   padding: 1rem;
   width: 35%;
@@ -218,6 +218,9 @@ main {
   width: 100%;
   height: auto;
   margin-bottom: 1rem;
+}
+.course .text {
+  padding-left: 1.5rem;
 }
 /* Thesis Styles */
 /* Footer Styles */
