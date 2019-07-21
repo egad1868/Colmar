@@ -112,11 +112,11 @@ ul li a:hover {
 }
 
 #banner .text {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-right: 1.5rem;
-  transition: left 2s linear;
+  transition: left 2s ease-in;
 }
 
 #banner h2 {
@@ -239,11 +239,13 @@ main {
 .course .text {
   padding-left: 1.5rem;
   visibility: hidden;
+  position: relative;
 }
 .course .text:hover {
   visibility: visible;
   transition: top 2s linear;
 }
+
 /* Thesis Styles */
 #thesis {
   padding: 2rem 0;
@@ -261,6 +263,7 @@ main {
 }
 .thesisL {
   width: 60%;
+  padding-left: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
