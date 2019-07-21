@@ -6,13 +6,16 @@ html {
 }
 body {
   background-color: #bbad8f;
-  font-family: "Montserrat Alternates", Arial, sans-serif;
+  font-family: "Josefin Sans", Arial, sans-serif;
   font-size: 1rem;
   color: #34415e;
 
 }
 a {
   text-decoration: none;
+}
+a:visited {
+  color: inherit;
 }
 p {
   margin: 0;
@@ -39,12 +42,15 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  font-weight: 700;
 }
 h3 {
   font-size: 1.5rem;
+  font-weight: 600;
 }
 h4 {
-  font-size: 0.75rem;
+  font-size: 1.25rem;
+  padding: 0.5rem 0;
 }
 /*Header styles*/
 header {
@@ -109,6 +115,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   margin-right: 1.5rem;
+  transition: left 2s linear;
 }
 
 #banner h2 {
@@ -155,6 +162,9 @@ main {
   width: 100%;
   height: auto;
 }
+.practiceL h2 {
+  margin-bottom: 1.5rem;
+}
 .practiceR {
   /*display: flex;
   flex-direction: column;
@@ -162,6 +172,10 @@ main {
   align-items: center;*/
   border-left: 0.05rem ridge #34415e;
   width: 40%;
+}
+
+.practiceR .card:last-child {
+  border-bottom: none;
 }
 .card {
   display: flex;
@@ -189,8 +203,8 @@ main {
 
 }
 .card:hover {
-  background-color: ##bbad8f;
-  transition: background-color 0.5s ease-in-out;
+  background-color: #bbad8f;
+  transition: background-color 1s linear;
 }
 /* Learn Styles */
 #courses {
@@ -222,6 +236,10 @@ main {
 }
 .course .text {
   padding-left: 1.5rem;
+  visibility: hidden;
+}
+.course .text:hover {
+  transition: top 2s linear;
 }
 /* Thesis Styles */
 #thesis {
@@ -258,4 +276,19 @@ main {
   margin-left: 1.5rem;
   width: 40%;
 }
+
+.thesisR .card {
+  border-bottom: none;
+}
 /* Footer Styles */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 2rem;
+  padding: 1rem 1.5rem;
+  background-color: #34415e;
+  height: 6rem;
+  width: 100%;
+  color: #bbad8f;
+}
