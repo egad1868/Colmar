@@ -245,7 +245,9 @@ main {
   visibility: visible;
   transition: top 2s linear;
 }
-
+.course ul li {
+  display: block;
+}
 /* Thesis Styles */
 #thesis {
   padding: 2rem 0;
