@@ -132,7 +132,17 @@ nav.desktop {
   }
 
 nav.mobile {
-  display: block;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.mobile {
+  line-height: 2rem;
+}
+.mobile ul li a img {
+  height: 100%;
+  width: auto;
 }
 
 .logo  {
@@ -294,17 +304,16 @@ main {
 
 .course .text {
   padding-left: 1.5rem;
+  opacity: 0;
+}
+
+.course .text:hover {
+  opacity: 1;
+  transition: opacity 1s linear;
 }
 
 .course ul li {
   display: block;
-  opacity: 0;
-}
-
-.course ul li:hover {
-  display: block;
-  opacity: 1;
-  transition: opacity 1s linear;
 }
 
 /* Thesis Styles */
