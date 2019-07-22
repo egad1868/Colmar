@@ -119,18 +119,18 @@ header {
 }
 
 /* Nav Styles */
-.mobile nav {
+nav.mobile {
   display: none;
 }
 
 @media only screen and (max-width:700px) {
-.desktop nav {
+nav.desktop {
     display: none;
   }
   header {
     height: 4rem;
   }
-  .logo span {
+span.logo  {
     display: none;
   }
 }
