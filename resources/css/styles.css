@@ -119,17 +119,11 @@ header {
 }
 
 /* Nav Styles */
-nav .desktop {
-  display: inline;
-}
 nav .mobile {
   display: none;
 }
 
 @media only screen and (max-width:700px) {
-  nav .mobile {
-    display: inline;
-  }
   nav .desktop {
     display: none;
   }
