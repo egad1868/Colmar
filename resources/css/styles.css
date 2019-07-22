@@ -302,6 +302,9 @@ main {
 .practiceL {
    display: none;
  }
+.practiceR {
+  width: 100%;
+}
  .card {
    flex-direction: column;
    width: 100%;
