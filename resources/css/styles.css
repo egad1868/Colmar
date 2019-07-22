@@ -4,6 +4,9 @@
 html {
   font-size: 16px;
 }
+* {
+    box-sizing: border-box;
+}
 body {
   background-color: #bbad8f;
   font-family: "Josefin Sans", Arial, sans-serif;
@@ -112,12 +115,10 @@ ul li a:hover {
 }
 
 #banner .text {
-  position: relative;
   display: flex;
   flex-direction: column;
   margin-right: 1.5rem;
-  transition: left 6s ease-in;
-}
+  }
 
 #banner h2 {
   margin-bottom: 1rem;
@@ -140,9 +141,11 @@ ul li a:hover {
 }
 /* Main Styles */
 main {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  width: 100%;
+
 }
 /* Practice Styles */
 #practice {
