@@ -137,17 +137,27 @@ nav.mobile {
   width: 100%;
 }
 
-.mobile {
-  line-height: 2rem;
+.mobile ul li {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-shrink: 2;
+  margin: 0 2rem;
 }
+
 .mobile ul li a img {
-  height: 100%;
+  height: 80%;
   width: auto;
 }
 
 .logo  {
     display: none;
   }
+}
+
+@media only screen and (max-width:480px) {
+  .mobile ul li a img {
+    height: 60%;
+}
 }
 /* Banner Styles */
 
@@ -190,6 +200,27 @@ nav.mobile {
   color: #16405b;
   transition: color 1s ease-in-out, background-color 1s ease-in-out;
 }
+@media only screen and (max-width:700px) {
+  #banner {
+    flex-direction: column;
+  }
+  #banner img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+#banner .text {
+  padding-left: 1rem;
+}
+#banner h1 {
+  padding: 2rem 0;
+}
+.btn {
+  margin: 1.5rem 0 2rem 0;
+}
+}
+
+
 
 /* Main Styles */
 
