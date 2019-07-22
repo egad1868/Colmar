@@ -323,6 +323,7 @@ main {
   display: none;
 }
 .card img.mobile {
+  display: block;
   width: 100%;
   padding: 1rem;
   height: auto;
@@ -332,7 +333,7 @@ main {
   padding-left: 2rem;
 }
 }
-/* Learn Styles */
+/* Courses Styles */
 
 #courses {
   padding: 2rem 4.6rem;
@@ -368,18 +369,43 @@ main {
 
 .course .text {
   padding-left: 1.5rem;
-  opacity: 0;
+  display: none;
+/*  opacity: 0; */
 }
 
 .course .text:hover {
   opacity: 1;
-  transition: opacity 1s linear;
+  display: flex;
+  transition: display 1s linear;
+/*  opacity 1s linear; */
 }
 
 .course ul li {
   display: block;
 }
+.mobileCourses {
+  display: none;
+}
+@media only screen and (max-width:700px) {
 
+#courses {
+  margin: 2rem auto;
+  width: 100%;
+}
+.mobileCourses {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileCourses .btn {
+  padding: 1rem 1rem 1.5rem 1rem;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.group {
+  display: none;
+}
+}
 /* Thesis Styles */
 
 #thesis {
