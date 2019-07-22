@@ -75,7 +75,7 @@ header {
 }
 .logo span {
   font-size: 1.5rem;
-  color: #bdbab3;
+  color: #e0d7c2;
 }
 .logo img {
   height: 2rem;
@@ -94,7 +94,7 @@ ul li a {
 }
 
 ul li a:hover {
-  color: #ffffff;
+  color: #e0d7c2;
   transition: color 0.5s ease-in-out;
 }
 /* Banner Styles */
@@ -142,12 +142,13 @@ ul li a:hover {
 main {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 /* Practice Styles */
 #practice {
   display: flex;
   justify-content: flex-start;
-  background-color: #bdbab3;
+  background-color: #e0d7c2;
   padding-left: 1.5rem;
 }
 .practiceL {
@@ -155,7 +156,7 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;*/
-  padding-right: 0 1.5rem 2rem 0;
+  padding: 0 1.5rem 2rem 0;
   width: 60%;
 }
 .practiceL img {
@@ -167,10 +168,9 @@ main {
   margin-bottom: 1.5rem;
 }
 .practiceR {
-  /*display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;*/
+  justify-content: center;
   border-left: 0.05rem ridge #34415e;
   width: 40%;
 }
@@ -229,7 +229,7 @@ main {
   align-items: flex-start;
   margin: 0 2rem 2rem 0;
   padding-bottom: 1.5rem;
-  background-color: #ffffff;
+  background-color: #e0d7c2;
 }
 .course img {
   width: 100%;
@@ -246,7 +246,7 @@ main {
 .course ul li:hover {
   display: block;
   opacity: 1.0;
-  transition: opacity 2s linear;
+  transition: opacity 1s linear;
 }
 /* Thesis Styles */
 #thesis {
@@ -254,7 +254,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #bdbab3;
+  background-color: #e0d7c2;
 }
 
 #thesis h2 {
@@ -269,7 +269,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #bdbab3;
+  background-color: #e0d7c2;
 }
 #thesis video {
   width: 100%;
