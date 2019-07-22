@@ -278,12 +278,14 @@ main {
   transition: background-color 1s linear;
 }
 
-.card img {
+.card img.desktop {
   padding: 1rem;
   width: 35%;
   height: auto;
 }
-
+.card img.mobile {
+  display: none;
+}
 .card .text {
   display: flex;
   flex-direction: column;
@@ -299,9 +301,13 @@ main {
   margin-top: 0.5rem;
 }
 @media only screen and (max-width:700px) {
+#practice {
+  padding: 0;
+}
 .practiceL {
    display: none;
  }
+
 .practiceR {
   width: 100%;
 }
@@ -313,8 +319,13 @@ main {
 .card:last-child {
   padding-bottom: 2rem;
 }
-.card img {
+.card img.desktop {
+  display: none;
+}
+.card img.mobile {
   width: 100%;
+  padding: 1rem;
+  height: auto;
 }
 .card .text {
   width: 100%;
