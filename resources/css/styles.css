@@ -154,9 +154,9 @@ nav.mobile {
   }
 }
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:525px) {
   .mobile ul li a img {
-    height: 60%;
+    height: 50%;
 }
 }
 /* Banner Styles */
@@ -298,7 +298,26 @@ main {
   font-size: 0.75rem;
   margin-top: 0.5rem;
 }
-
+@media only screen and (max-width:700px) {
+ #practiceL {
+   display: none;
+ }
+ .card {
+   flex-direction: column;
+   width: 100%;
+   padding-bottom: 4rem;
+}
+.card:last-child {
+  padding-bottom: 2rem;
+}
+.card img {
+  width: 100%;
+}
+.card .text {
+  width: 100%;
+  padding-left: 2rem;
+}
+}
 /* Learn Styles */
 
 #courses {
