@@ -119,12 +119,12 @@ header {
 }
 
 /* Nav Styles */
-nav .mobile {
+.mobile nav {
   display: none;
 }
 
 @media only screen and (max-width:700px) {
-  nav .desktop {
+.desktop nav {
     display: none;
   }
   header {
