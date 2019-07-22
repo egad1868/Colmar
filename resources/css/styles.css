@@ -1,29 +1,50 @@
-@import url('https://fonts.googleapis.com/css?family=Acme|Hammersmith+One|Josefin+Sans|Montserrat+Alternates|Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme|Hammersmith+One|Josefin+Sans|Philosopher&display=swap');
 
 /* Universal Styles */
+
 html {
   font-size: 16px;
 }
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 body {
   background-color: #bbad8f;
   font-family: "Josefin Sans", Arial, sans-serif;
   font-size: 1rem;
   color: #34415e;
-
 }
+
+ul li {
+  display: inline;
+  margin-left: 1rem;
+}
+
 a {
   text-decoration: none;
 }
+
+ul li a {
+  color: #bbad8f;
+  font-weight: bold;
+}
+
 a:visited {
   color: inherit;
 }
+
+ul li a:hover {
+  color: #e0d7c2;
+  transition: color 0.5s ease-in-out;
+}
+
 p {
   margin: 0;
   padding: 0;
 }
+
 .image-container {
   overflow: hidden;
 }
@@ -32,7 +53,12 @@ p {
   display: block;
   max-width: 100%;
 }
-h1, h2, h3, h4, {
+
+h1,
+h2,
+h3,
+h4,
+  {
   margin: 0;
   padding: 0;
   font-weight: bold;
@@ -47,15 +73,19 @@ h2 {
   font-size: 2rem;
   font-weight: 700;
 }
+
 h3 {
   font-size: 1.5rem;
   font-weight: 600;
 }
+
 h4 {
   font-size: 1.25rem;
   padding: 0.5rem 0;
 }
-/*Header styles*/
+
+/* Header styles */
+
 header {
   display: flex;
   align-items: center;
@@ -76,37 +106,49 @@ header {
   text-transform: uppercase;
   color: #bbad8f;
 }
+
 .logo span {
   font-size: 1.5rem;
   color: #e0d7c2;
 }
+
 .logo img {
   height: 2rem;
   width: auto;
   padding-right: 1.5rem;
 }
+
 /* Nav Styles */
-ul li {
-  display:inline;
-  margin-left: 1rem;
+nav .desktop {
+  display: inline;
+}
+nav .mobile {
+  display: none;
 }
 
-ul li a {
-  color: #bbad8f;
-  font-weight: bold;
-}
-
-ul li a:hover {
-  color: #e0d7c2;
-  transition: color 0.5s ease-in-out;
+@media only screen and (max-width:700px) {
+  nav .mobile {
+    display: inline;
+  }
+  nav .desktop {
+    display: none;
+  }
+  header {
+    height: 4rem;
+  }
+  .logo span {
+    display: none;
+  }
 }
 /* Banner Styles */
+
 #banner {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin: 0 auto;
 }
+
 #banner img {
   padding: 2rem 1.5rem;
   margin-top: 4rem;
@@ -118,7 +160,7 @@ ul li a:hover {
   display: flex;
   flex-direction: column;
   margin-right: 1.5rem;
-  }
+}
 
 #banner h2 {
   margin-bottom: 1rem;
@@ -132,44 +174,47 @@ ul li a:hover {
   color: #bbad8f;
   font-size: 1.5rem;
   margin-top: 1rem;
-  }
+}
+
 .btn:hover {
   background-color: #bbad8f;
   color: #16405b;
-  transition: color 1s ease-in-out,
-  background-color 1s ease-in-out;
+  transition: color 1s ease-in-out, background-color 1s ease-in-out;
 }
+
 /* Main Styles */
+
 main {
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-
 }
+
 /* Practice Styles */
+
 #practice {
   display: flex;
   justify-content: flex-start;
   background-color: #e0d7c2;
   padding-left: 1.5rem;
 }
+
 .practiceL {
-/*  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;*/
   padding: 0 1.5rem 2rem 0;
   width: 60%;
 }
+
 .practiceL img {
   padding: 2rem 0;
   width: 100%;
   height: auto;
 }
+
 .practiceL h2 {
   margin-bottom: 1.5rem;
 }
+
 .practiceR {
   display: flex;
   flex-direction: column;
@@ -181,20 +226,24 @@ main {
 .practiceR .card:last-child {
   border-bottom: none;
 }
+
 .card {
   display: flex;
   align-items: center;
   border-bottom: 0.05rem ridge #34415e;
 }
+
 .card:hover {
   background-color: #bbad8f;
   transition: background-color 1s linear;
 }
+
 .card img {
   padding: 1rem;
   width: 35%;
   height: auto;
 }
+
 .card .text {
   display: flex;
   flex-direction: column;
@@ -208,24 +257,27 @@ main {
 .card a {
   font-size: 0.75rem;
   margin-top: 0.5rem;
-
 }
 
 /* Learn Styles */
+
 #courses {
   padding: 2rem 4.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 #courses h2 {
   margin-bottom: 2rem;
 }
+
 .group {
   display: flex;
   flex-direction: row;
   padding-left: 1.5rem;
 }
+
 .course {
   display: flex;
   flex-direction: column;
@@ -234,24 +286,30 @@ main {
   padding-bottom: 1.5rem;
   background-color: #e0d7c2;
 }
+
 .course img {
   width: 100%;
   height: auto;
   margin-bottom: 1rem;
 }
+
 .course .text {
   padding-left: 1.5rem;
 }
+
 .course ul li {
   display: block;
-  opacity: 0.0;
+  opacity: 0;
 }
+
 .course ul li:hover {
   display: block;
-  opacity: 1.0;
+  opacity: 1;
   transition: opacity 1s linear;
 }
+
 /* Thesis Styles */
+
 #thesis {
   padding: 2rem 0;
   display: flex;
@@ -263,9 +321,11 @@ main {
 #thesis h2 {
   margin-bottom: 2rem;
 }
+
 .thesis {
   display: flex;
 }
+
 .thesisL {
   width: 60%;
   padding-left: 1.5rem;
@@ -274,11 +334,12 @@ main {
   align-items: flex-start;
   background-color: #e0d7c2;
 }
+
 #thesis video {
   width: 100%;
   margin-bottom: 1.5rem;
-
 }
+
 #thesis h3 {
   margin-bottom: 0.5rem;
 }
@@ -291,7 +352,9 @@ main {
 .thesisR .card {
   border-bottom: none;
 }
+
 /* Footer Styles */
+
 footer {
   display: flex;
   align-items: center;
