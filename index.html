@@ -15,12 +15,12 @@
 <!--  Header Section -->
   <header>
     <div class="logo">
-      <img src="./resources/images/ic-logo.png" alt="Logo">
-      <h3>Colmar</h3> <span> Academy</span>
+      <img src="./resources/images/ic-logo.png" alt="School Logo">
+      <h3 role="note">Colmar</h3> <span role="note"> Academy</span>
     </div>
 <!-- Navigation Section -->
     <nav class="desktop">
-      <ul>
+      <ul role="presentation">
         <li><a href="#onCampus">On Campus</a></li>
         <li><a href="#online">Online</a></li>
         <li><a href="#forCompanies">For Companies</a></li>
@@ -28,7 +28,7 @@
       </ul>
     </nav>
     <nav class="mobile">
-      <ul>
+      <ul role="presentation">
         <li><a href="#home"> <img src="./resources/images/ic-logo.svg" alt="Logo Icon"> </a></li>
         <li><a href="#onCampus"> <img src="./resources/images/ic-on-campus.svg" alt="On Campus Icon"> </a></li>
         <li><a href="#online"><img src="./resources/images/ic-online.svg" alt="Online Icon"> </a></li>
@@ -37,29 +37,29 @@
     </nav>
   </header>
 <!--  Banner Section -->
-  <section id="banner">
+  <section role="banner" id="banner">
     <img src="./resources/images/banner.jpg" alt="Girls Studying">
-    <div class="text">
-      <h1>Learn something new everyday</h1>
+    <div role="presentation" class="text">
+      <h1 role="heading">Learn something new everyday</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
-      <button type="button" name="button" class="btn">Start here</button>
+      <button role="button" type="button" name="button" class="btn">Start here</button>
     </div>
   </section>
 <!--  Main Section -->
   <main>
 <!-- Practice Section -->
-    <section id="practice">
-      <div class="practiceL">
+    <section role="group" id="practice">
+      <div role="presentation" class="practiceL">
         <img src="./resources/images/information-main.jpg" alt="Man Reading">
-        <h2>It doesn't hurt to keep practicing</h2>
+        <h2 role="heading">It doesn't hurt to keep practicing</h2>
         <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p><br><br>
-        <p>Emanuel, Sr Strategist at Hiring.com</p>
+        <p aria-label="Author of Quote">Emanuel, Sr Strategist at Hiring.com</p>
       </div>
-      <div class="practiceR">
+      <div role="presentation" class="practiceR">
         <div class="card">
           <img class="desktop" src="./resources/images/information-orientation.jpg" alt="Students Walking">
           <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="Students Walking">
-          <div class="text">
+          <div role="contentinfo" class="text">
             <h3>Orientation date</h3>
             <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
             <a href="#orientation">Read More</a>
@@ -68,7 +68,7 @@
           <div class="card">
             <img class="desktop" src="./resources/images/information-campus.jpg" alt="Study Area">
             <img class="mobile" src="./resources/images/information-campus-mobile.jpg" alt="Study Area">
-            <div class="text">
+            <div role="contentinfo" class="text">
               <h3>Our campus</h3>
               <p>Find which campus is close by you</p>
               <a href="#campus">Read More</a>
@@ -77,7 +77,7 @@
           <div class="card">
             <img class="desktop" src="./resources/images/information-guest-lecture.jpg" alt="Portrait of Man">
             <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Portrait of Man">
-            <div class="text">
+            <div role="contentinfo" class="text">
               <h3>Our guest lecture</h3>
               <p>Join a keynote with Oliver Sack about music in medical treatment</p>
               <a href="#lecture">Read More</a>
@@ -86,15 +86,15 @@
       </div>
     </section>
 <!-- Courses Section -->
-    <section id="courses">
+    <section role="group" id="courses">
       <h2>Start Learning</h2>
-      <div class="group">
+      <div role="presentation" class="group">
         <div class="course">
           <img src="./resources/images/course-software.jpg" alt="Software">
-          <div class="text">
+          <div role="contentinfo" class="text">
             <h3>Software Engineering</h3>
             <h4>COURSES</h4>
-            <ul>
+            <ul role="presentation">
               <li>Web Development</li>
               <li>Mobile Development</li>
               <li>iOT</li>
@@ -104,10 +104,10 @@
         </div>
         <div class="course">
           <img src="./resources/images/course-computer-art.jpg" alt="Computer Art">
-          <div class="text">
+          <div role="contentinfo" class="text">
             <h3>Computer Art</h3>
             <h4>COURSES</h4>
-            <ul>
+            <ul role="presentation">
               <li>Imaging &amp; Design</li>
               <li>Web Design</li>
               <li>Motion Graphics</li>
@@ -117,10 +117,10 @@
         </div>
         <div class="course">
           <img src="./resources/images/course-design.jpg" alt="Design">
-          <div class="text">
+          <div role="contentinfo" class="text">
             <h3>Design</h3>
             <h4>COURSES</h4>
-            <ul>
+            <ul role="presentation">
               <li>User Experience Design</li>
               <li>User Research</li>
               <li>Visual Design</li>
@@ -128,13 +128,13 @@
           </div>
         </div>
       </div>
-      <div class="group">
+      <div role="presentation" class="group">
         <div class="course">
           <img src="./resources/images/course-data.jpg" alt="Data">
-          <div class="text">
+          <div role="contentinfo" class="text">
             <h3>Data</h3>
             <h4>COURSES</h4>
-            <ul>
+            <ul role="presentation">
               <li>Data Science</li>
               <li>Big Data</li>
               <li>SQL</li>
@@ -144,10 +144,10 @@
         </div>
         <div class="course">
           <img src="./resources/images/course-business.jpg" alt="Business">
-          <div class="text">
+          <div role="contentinfo" class="text">
             <h3>Business</h3>
             <h4>COURSES</h4>
-            <ul>
+            <ul role="presentation">
               <li>Product Development</li>
               <li>Business Development</li>
               <li>Startup</li>
@@ -156,10 +156,10 @@
         </div>
         <div class="course">
           <img src="./resources/images/course-marketing.jpg" alt="Marketing">
-          <div class="text">
+          <div role="contentinfo" class="text">
             <h3>Marketing</h3>
             <h4>COURSES</h4>
-            <ul>
+            <ul role="presentation">
               <li>Analytics</li>
               <li>Content Marketing</li>
               <li>Mobile Marketing</li>
@@ -168,36 +168,36 @@
         </div>
       </div>
       <div class="mobileCourses">
-        <button type="button" class="btn" name="button">Software Engineering</button>
-        <button type="button" class="btn" name="button">Computer Art</button>
-        <button type="button" class="btn" name="button">Data</button>
-        <button type="button" class="btn" name="button">Design</button>
-        <button type="button" class="btn" name="button">Business</button>
-        <button type="button" class="btn" name="button">Marketing</button>
+        <button role="button" type="button" class="btn" name="button">Software Engineering</button>
+        <button role="button" type="button" class="btn" name="button">Computer Art</button>
+        <button role="button" type="button" class="btn" name="button">Data</button>
+        <button role="button" type="button" class="btn" name="button">Design</button>
+        <button role="button" type="button" class="btn" name="button">Business</button>
+        <button role="button" type="button" class="btn" name="button">Marketing</button>
       </div>
     </section>
 <!-- Thesis Section -->
-    <section id="thesis">
+    <section role="group" id="thesis">
       <h2>Thesis Exhibit</h2>
-      <div class="thesis">
-        <div class="thesisL">
+      <div role="presentation" class="thesis">
+        <div role="presentation" class="thesisL">
           <video src="./resources/videos/thesis.mp4" autoplay poster="posterimage.jpg">
           </video>
-            <h3>Reimagine Urban</h3>
+            <h3 role="heading">Reimagine Urban</h3>
             <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
         </div>
-        <div class="thesisR">
+        <div role="presentation" class="thesisR">
           <div class="card">
             <img class="desktop" src="./resources/images/thesis-fisma.jpg" alt="Student Designing">
-            <div class="text">
-              <h3>Fisma: Design &amp; Prototype</h3>
+            <div role="contentinfo" class="text">
+              <h3 role="heading">Fisma: Design &amp; Prototype</h3>
               <p>Designer showcase of new prototype product</p>
             </div>
           </div>
           <div class="card">
             <img class="desktop" src="./resources/images/thesis-now-and-then.jpg" alt="City Skyline">
-            <div class="text">
-              <h3>Now and Then</h3>
+            <div role="contentinfo" class="text">
+              <h3 role="heading">Now and Then</h3>
               <p>Research study about New York</p>
             </div>
           </div>
@@ -210,7 +210,7 @@
     <div class="copyright">
       &copy; 2019 Colmar Academy All Rights Reserved.
     </div>
-    <ul>
+    <ul role="presentation">
       <li><a href="#terms">Terms</a></li>
       <li><a href="#terms">Privacy</a></li>
     </ul>

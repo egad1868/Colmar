@@ -457,6 +457,10 @@ main {
 #thesis h2 {
 margin-bottom: 1rem;
 }
+.thesisL {
+  width: 100%;
+  padding: 0;
+}
   .thesisR, #thesis h3, p {
     display: none;
   }
@@ -477,8 +481,5 @@ footer {
 @media only screen and (max-width:700px) {
   footer ul {
     display: none;
-  }
-  footer {
-    padding: 1rem 0;
   }
 }
