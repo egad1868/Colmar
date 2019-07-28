@@ -394,7 +394,7 @@ main {
 .mobileCourses {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
 }
 
 .mobileCourses .btn {
@@ -451,6 +451,12 @@ main {
   border-bottom: none;
 }
 @media only screen and (max-width:700px) {
+  #thesis {
+    padding: 2rem 0 1.5rem 0;
+  }
+#thesis h2 {
+margin-bottom: 1rem;
+}
   .thesisR, #thesis h3, p {
     display: none;
   }
@@ -467,4 +473,12 @@ footer {
   height: 6rem;
   width: 100%;
   color: #bbad8f;
+}
+@media only screen and (max-width:700px) {
+  footer ul {
+    display: none;
+  }
+  footer {
+    padding: 1rem 0;
+  }
 }
